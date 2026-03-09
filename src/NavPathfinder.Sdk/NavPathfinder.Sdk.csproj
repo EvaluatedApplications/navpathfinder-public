@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>NavPathfinder.Sdk</RootNamespace>
+    <PackageId>NavPathfinder.Sdk</PackageId>
+    <Title>NavPathfinder SDK</Title>
+    <Version>1.0.0</Version>
+    <Authors>Evaluated Applications</Authors>
+    <Description>High-performance navigation mesh pathfinding SDK for real-time games and simulations.</Description>
+    <PackageTags>pathfinding;navigation-mesh;game-dev;ai</PackageTags>
+    <PackageLicenseExpression>Unlicense</PackageLicenseExpression>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NavPathfinder">
+      <HintPath>../../libs/NavPathfinder.dll</HintPath>
+    </Reference>
+    <Reference Include="EvalApp.Licensing">
+      <HintPath>../../libs/EvalApp.Licensing.dll</HintPath>
+    </Reference>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
+  </ItemGroup>
+</Project>
